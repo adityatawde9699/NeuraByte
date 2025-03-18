@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NeuraByte - Where Magic Meets Technology</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon" />
+    <!-- GSAP for animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loading-screen">
+        <div class="wand-loader">
+            <div class="wand">
+                <div class="wand-tip"></div>
+            </div>
+            <div class="spell-particles"></div>
+        </div>
+        <p class="loading-text">Casting Spells...</p>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="nav-parchment">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="logo.png" alt="NeuraByte Logo" class="logo-img">
+            </div>
+            <div class="nav-links">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About Us</a>
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#blog" class="nav-link">Blog</a>
+                <a href="#contact" class="nav-link">Contact</a>
+                <a href="#login" class="nav-link login-btn">Portal Login</a>
+            </div>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 1. Home Section - The Great Hall Entrance -->
+    <section id="home" class="home-section">
+        <div class="floating-candles">
+            <!-- Candles will be generated via JS -->
+        </div>
+        
+        <div class="hero-content">
+            <div class="crest-logo">
+                <div class="crest-quadrant ai">AI</div>
+                <div class="crest-quadrant iot">IoT</div>
+                <div class="crest-quadrant web">Web</div>
+                <div class="crest-quadrant robotics">Robotics</div>
+            </div>
+            
+            <h1 class="spell-text">NeuraByte</h1>
+            <p class="tagline">Where Magic Meets Technology</p>
+            
+            <button class="cta-button">
+                <span>Explore Our Magic</span>
+                <div class="wand-spark"></div>
+            </button>
+            
+            <div class="scroll-prompt">
+                <p>Enter The Enchanted Realm</p>
+                <div class="scroll-arrow"></div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- 2. About Us - The Wizarding Team -->
+    <section id="about" class="about-section">
+        <h2 class="section-title">The Wizarding Team</h2>
+        <div class="about-intro">
+            <p>Welcome to the NeuraByte collective, where a fellowship of tech wizards combine their powers to create enchanting technological solutions.</p>
+        </div>
+        
+        <div class="team-container">
+            <!-- Team members will be styled as wizard cards -->
+            <div class="wizard-card">
+                <div class="card-front">
+                    <img src="wizard1.jpg" alt="AI Sorcerer" class="wizard-img">
+                    <h3>Aditya</h3>
+                    <p>AI Sorcerer</p>
+                </div>
+                <div class="card-back">
+                    <h3>Aditya</h3>
+                    <p class="wizard-bio">Master of neural networks and data incantations. Specializes in crafting intelligent systems that seem to work by magic.</p>
+                    <div class="wizard-skills">
+                        <span>Deep Learning</span>
+                        <span>Computer Vision</span>
+                        <span>NLP</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="wizard-card">
+                <div class="card-front">
+                    <img src="wizard2.jpg" alt="Tech Conjurer" class="wizard-img">
+                    <h3>Neel</h3>
+                    <p>Tech Conjurer</p>
+                </div>
+                <div class="card-back">
+                    <h3>Neel</h3>
+                    <p class="wizard-bio">Enchanter of code and architect of digital realms. Creates immersive web experiences with a flick of his keyboard.</p>
+                    <div class="wizard-skills">
+                        <span>Full Stack</span>
+                        <span>UI/UX</span>
+                        <span>Cloud Architecture</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Add more team members as needed -->
+        </div>
+        
+        <div class="magical-timeline">
+            <h3>The Origin Story</h3>
+            <div class="timeline-scroll">
+                <!-- Timeline events -->
+                <div class="timeline-event">
+                    <div class="event-year">2020</div>
+                    <div class="event-content">
+                        <h4>The Gathering</h4>
+                        <p>NeuraByte was founded when four tech enthusiasts met at the Digital Alchemy Conference.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-event">
+                    <div class="event-year">2021</div>
+                    <div class="event-content">
+                        <h4>First Enchantment</h4>
+                        <p>Our first major project, BlueMatrice, won the Innovation Award.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-event">
+                    <div class="event-year">2022</div>
+                    <div class="event-content">
+                        <h4>Expanding the Circle</h4>
+                        <p>NeuraByte grew to include specialists in robotics and IoT.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-event">
+                    <div class="event-year">2023</div>
+                    <div class="event-content">
+                        <h4>Magical Evolution</h4>
+                        <p>Launched our enchanted portal to share our knowledge with the world.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- 3. Services - Spellbook of Solutions -->
+    <section id="services" class="services-section">
+        <h2 class="section-title">Spellbook of Solutions</h2>
+        
+        <div class="spellbook">
+            <div class="book-cover">
+                <h3>Our Arcane Services</h3>
+                <p>Click to open the spellbook</p>
+            </div>
+            
+            <div class="book-pages">
+                <div class="service-page ai-spells">
+                    <div class="page-content">
+                        <h3>AI Spellcraft</h3>
+                        <div class="service-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <ul class="spell-list">
+                            <li>Custom AI Solutions Development</li>
+                            <li>Machine Learning Model Training</li>
+                            <li>Computer Vision Implementation</li>
+                            <li>Natural Language Processing</li>
+                            <li>Predictive Analytics</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="service-page iot-enchantments">
+                    <div class="page-content">
+                        <h3>Mystical IoT Enchantments</h3>
+                        <div class="service-icon">
+                            <i class="fas fa-network-wired"></i>
+                        </div>
+                        <ul class="spell-list">
+                            <li>Smart Home Automation</li>
+                            <li>Industrial IoT Solutions</li>
+                            <li>Environmental Monitoring Systems</li>
+                            <li>Wearable Technology</li>
+                            <li>Connected Device Networks</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="service-page web-alchemy">
+                    <div class="page-content">
+                        <h3>Digital Alchemy</h3>
+                        <div class="service-icon">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <ul class="spell-list">
+                            <li>Responsive Website Development</li>
+                            <li>Mobile App Creation</li>
+                            <li>E-commerce Portals</li>
+                            <li>Content Management Systems</li>
+                            <li>API Integration & Development</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="service-page robotics-sorcery">
+                    <div class="page-content">
+                        <h3>Mechanical Sorcery</h3>
+                        <div class="service-icon">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <ul class="spell-list">
+                            <li>Autonomous Robot Design</li>
+                            <li>Robotic Process Automation</li>
+                            <li>Custom Hardware Solutions</li>
+                            <li>Mechanical & Electronic Integration</li>
+                            <li>Prototype Development</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- 4. Projects - The Hall of Enchanted Creations -->
+    <section id="projects" class="projects-section">
+        <h2 class="section-title">The Hall of Enchanted Creations</h2>
+        
+        <div class="project-filters">
+            <button class="filter-btn active" data-filter="all">All Creations</button>
+            <button class="filter-btn" data-filter="ai">AI</button>
+            <button class="filter-btn" data-filter="iot">IoT</button>
+            <button class="filter-btn" data-filter="web">Web</button>
+            <button class="filter-btn" data-filter="robotics">Robotics</button>
+        </div>
+        
+        <div class="projects-gallery">
+            <div class="project-card" data-category="iot">
+                <div class="project-image">
+                    <img src="project1.jpg" alt="BlueMatrice">
+                    <div class="magic-overlay"></div>
+                </div>
+                <div class="project-info">
+                    <h3>BlueMatrice</h3>
+                    <p>Water Quality Spell Monitor</p>
+                    <div class="project-details">
+                        <p>An IoT-based water quality monitoring system that tracks pH, TDS, turbidity, and temperature.</p>
+                        <a href="#" class="view-project">View Enchantment</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="project-card" data-category="ai">
+                <div class="project-image">
+                    <img src="project2.jpg" alt="AI Chatbot">
+                    <div class="magic-overlay"></div>
+                </div>
+                <div class="project-info">
+                    <h3>WizardChat</h3>
+                    <p>Talking Grimoire</p>
+                    <div class="project-details">
+                        <p>Intelligent conversational AI assistant with domain-specific knowledge and natural language capabilities.</p>
+                        <a href="#" class="view-project">View Enchantment</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="project-card" data-category="robotics">
+                <div class="project-image">
+                    <img src="project3.jpg" alt="Pick & Place Robot">
+                    <div class="magic-overlay"></div>
+                </div>
+                <div class="project-info">
+                    <h3>EnchantArm</h3>
+                    <p>Auto Pick & Place Golem</p>
+                    <div class="project-details">
+                        <p>Automated robotic arm with computer vision for intelligent object sorting and placement.</p>
+                        <a href="#" class="view-project">View Enchantment</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="project-card" data-category="web">
+                <div class="project-image">
+                    <img src="project4.jpg" alt="Web Platform">
+                    <div class="magic-overlay"></div>
+                </div>
+                <div class="project-info">
+                    <h3>SpellCraft CMS</h3>
+                    <p>Digital Realm Builder</p>
+                    <div class="project-details">
+                        <p>Custom content management system with drag-and-drop interface for non-technical users.</p>
+                        <a href="#" class="view-project">View Enchantment</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- 5. Blog - Scrolls of Knowledge -->
+    <section id="blog" class="blog-section">
+        <h2 class="section-title">Scrolls of Knowledge</h2>
+        
+        <div class="scroll-search">
+            <input type="text" class="scroll-search-input" placeholder="Search the ancient texts...">
+            <button class="search-btn" title="Search"><i class="fas fa-search"></i></button>
+        </div>
+        
+        <div class="scroll-categories">
+            <span class="scroll-category active">All Scrolls</span>
+            <span class="scroll-category">Spell of the Week</span>
+            <span class="scroll-category">Tech Incantations</span>
+            <span class="scroll-category">Wand Tips</span>
+        </div>
+        
+        <div class="scroll-rack">
+            <div class="scroll-item">
+                <div class="scroll-preview">
+                    <img src="blog1.jpg" alt="AI Ethics" class="scroll-image">
+                    <div class="scroll-meta">
+                        <span class="scroll-date">March 15, 2023</span>
+                        <span class="scroll-category-tag">Tech Incantations</span>
+                    </div>
+                    <h3 class="scroll-title">The Ethics of AI: A Wizard's Responsibility</h3>
+                    <p class="scroll-excerpt">Exploring the moral implications of creating intelligent systems and how to ensure they serve the greater good.</p>
+                    <a href="#" class="read-more">Unfurl Scroll</a>
+                </div>
+            </div>
+            
+            <div class="scroll-item">
+                <div class="scroll-preview">
+                    <img src="blog2.jpg" alt="IoT Security" class="scroll-image">
+                    <div class="scroll-meta">
+                        <span class="scroll-date">February 28, 2023</span>
+                        <span class="scroll-category-tag">Spell of the Week</span>
+                    </div>
+                    <h3 class="scroll-title">Securing Your IoT Realm: Protection Spells</h3>
+                    <p class="scroll-excerpt">Essential security practices to keep your connected devices safe from dark magic and intrusions.</p>
+                    <a href="#" class="read-more">Unfurl Scroll</a>
+                </div>
+            </div>
+            
+            <div class="scroll-item">
+                <div class="scroll-preview">
+                    <img src="blog3.jpg" alt="CSS Tricks" class="scroll-image">
+                    <div class="scroll-meta">
+                        <span class="scroll-date">January 18, 2023</span>
+                        <span class="scroll-category-tag">Wand Tips</span>
+                    </div>
+                    <h3 class="scroll-title">CSS Grid: Layout Spells for Modern Wizards</h3>
+                    <p class="scroll-excerpt">Master the art of responsive layouts with CSS Grid and transform your web creations.</p>
+                    <a href="#" class="read-more">Unfurl Scroll</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- 6. Contact - Owl Post Chamber -->
+    <section id="contact" class="contact-section">
+        <h2 class="section-title">Owl Post Chamber</h2>
+        
+        <div class="contact-container">
+            <div class="contact-form-container">
+                <form class="owl-post-form">
+                    <div class="form-heading">
+                        <img src="owl-icon.png" alt="Owl Post" class="owl-icon">
+                        <h3>Send Us a Message</h3>
+                    </div>
+                    
+                    <div class="form-field">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    
+                    <div class="form-field">
+                        <label for="email">Your Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-field">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject">
+                    </div>
+                    
+                    <div class="form-field">
+                        <label for="message">Your Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="send-owl">
+                        <span>Send via Owl Post</span>
+                        <div class="owl-animation"></div>
+                    </button>
+                </form>
+            </div>
+            
+            <div class="enchanted-map">
+                <h3>Find Our Castle</h3>
+                <div class="map-container">
+                    <!-- Map will be added later -->
+                    <div class="map-placeholder">
+                        <img src="map.jpg" alt="NeuraByte HQ Location">
+                        <div class="location-marker"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="magical-footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="logo-small.png" alt="NeuraByte Footer Logo">
+            </div>
+            
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h4>Magical Realms</h4>
+                    <a href="#home">Home</a>
+                    <a href="#about">About Us</a>
+                    <a href="#services">Services</a>
+                    <a href="#projects">Projects</a>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Knowledge</h4>
+                    <a href="#blog">Blog</a>
+                    <a href="#">Resources</a>
+                    <a href="#">FAQ</a>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Connect</h4>
+                    <a href="#contact">Contact</a>
+                    <a href="#">Careers</a>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon" title="Follow us on Twitter">
+                            <img src="https://img.icons8.com/color/48/000000/twitter.png" alt="Twitter"/>
+                        </a>
+                        <a href="#" class="social-icon" title="Connect with us on LinkedIn">
+                            <img src="https://img.icons8.com/color/48/000000/linkedin.png" alt="LinkedIn"/>
+                        </a>
+                        <a href="#" class="social-icon" title="Check our GitHub repositories">
+                            <img src="https://img.icons8.com/color/48/000000/github.png" alt="GitHub"/>
+                        </a>
+                        <a href="#" class="social-icon" title="Follow us on Instagram">
+                            <img src="https://img.icons8.com/color/48/000000/instagram-new.png" alt="Instagram"/>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2023 NeuraByte. All magical rights reserved.</p>
+        </div>
+    </footer>
+    
+    <!-- Login Portal Modal -->
+    <div class="portal-modal" id="loginModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="portal-login">
+                <h2>Enter the Wizard Portal</h2>
+                <form class="login-form">
+                    <div class="form-field">
+                        <label for="username">Wizard Name</label>
+                        <input type="text" id="username" name="username" required>
+                    </div>
+                    
+                    <div class="form-field">
+                        <label for="password">Secret Incantation</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+                    
+                    <button type="submit" class="portal-submit">
+                        <span>Unlock Portal</span>
+                        <div class="lock-animation"></div>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
